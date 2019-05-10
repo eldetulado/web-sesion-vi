@@ -68,10 +68,6 @@ header .overlay{
     height: 57px;
 }
 
-.menu .logo:hover{
-    background: #4357ad;
-}
-
 .menu .enlaces{
     display: inline;
 }
