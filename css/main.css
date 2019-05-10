@@ -1,0 +1,153 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+.header{
+    background: url(./../img/bg_forest.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 0;
+}
+
+.header .container-titulo{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.header .container-titulo strong{
+    display: block;
+    color: white;
+    font-style: italic;
+}
+
+.header .container-titulo strong.titulo-grande{
+    font-size: 100px;
+}
+
+.header .container-titulo strong.titulo-pequenio{
+    font-size: 20px;
+}
+
+.menu{
+    top: 25px;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.menu .logo{
+    display: inline;
+    margin-right: 1em;
+}
+
+.menu .logo img{
+    height: 57px;
+}
+
+.menu .logo:hover{
+    background: #4357ad;
+}
+
+.menu .enlaces{
+    display: inline;
+}
+
+.menu .enlaces a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.menu .enlaces a:hover{
+    background: white;
+    color: #000;
+}
+
+.main-container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.section{
+    border: 1px solid blue;
+    text-align: center;
+    padding: 50px 0;
+}
+.section h2 span{
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+}
+.section > p{
+    margin-bottom: 25px;
+}
+
+.hello .container-description-hello{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 25px;
+}
+
+.hello .container-description-hello p:first-child{
+    flex: 1;
+    text-align: right;
+    margin-left: 25px;
+}
+
+.hello .container-description-hello p:last-child{
+    flex: 1;
+    text-align: left; 
+    margin-left: 25px;
+    font-size: 23px;
+}
+
+.hello .container-items-hello{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.hello .container-items-hello .item-hello{
+    flex: 1;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.hello .container-items-hello .item-hello > img{
+    width: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.hello .container-items-hello .item-hello .title-item{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
